@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop vui vẻ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="Menu.js" defer></script>
+</head>
+<body>
+    <header id="container">
+        <div class="menu-bar">
+            <!-- Logo phần trái -->
+            <div class="logo">
+                <button onclick="redirectToHome()">
+                    <img src="img/logo shop.jpg" alt="Logo">
+                </button>
+            </div>
+
+            <!-- Các mục trong thanh menu -->
+            <div class="menu-items">
+                <a href="Menu.html" target="page">Trang chủ</a>
+                <a href="Menu.html" target="page">Menu2</a>
+                <a href="safe.html" target="page">Thời gian khuyến mãi</a>
+                <a href="Menu.html" target="page">Menu4</a>
+                <a href="cart.html" target="page">Menu5</a>
+            </div>
+            <!-- icon người mua -->
+            <div class="icons">
+                <i class="fa-regular fa-user"></i>
+                <button onclick="iconclick()">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </button>
+            </div>
+            <!-- Tìm kiếm -->
+            <input type="search" placeholder="Tìm kiếm">
+            <!-- Icon tìm kiếm -->
+            <div class="icons">
+                <i class="fa-solid fa-search"></i>
+            </div>
+            
+        </div>
+        
+        <!-- Phần giới thiệu -->
+        <article>
+            <iframe id="main-frame" name="page" src="Menu.html" frameborder="0"></iframe>
+        </article>
+        
+        <!-- Footer -->
+        <footer>
+            <p>Liên hệ:</p>
+            <p>Email: baonqtd00727@fpt.edu.vn</p>
+            <p>Điện thoại: (+84) 702 473</p>
+            <p>Địa chỉ: Số 66, đường Lâm Nhĩ, phường Hòa An, quận Cẩm Lệ, thành phố Đà Nẵng</p>
+        </footer>
+    </header>
+    <div class="space"></div>
+</body>
+</html>

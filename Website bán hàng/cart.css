@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.cart-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.cart-section h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-list {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-item img {
+    width: 170px;
+    height: 170px;
+}
+
+.product-item p {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.product-details {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.product-actions {
+    display: flex;
+    align-items: center;
+}
+
+.product-actions input {
+    width: 60px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.product-actions button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.product-actions button:hover {
+    background-color: #9a9999;
+}
+
+.select-button {
+    background-color: #007bff;
+    border: none;
+    color: #000000;
+    padding: 5px 10px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.select-button:hover {
+    background-color: #0056b3;
+}
+
+.promo-code {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.promo-code input {
+    width: 350px;
+    height: 30px;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.summary {
+    width: 80%;
+    margin: 20px auto;
+    text-align: right;
+}
+
+.summary p {
+    margin: 5px 0;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.buttons {
+    text-align: center;
+    margin: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+.pay-button {
+    background-color: #99ff99;
+    border: none;
+    color: #ffffff;
+}
+
+.delete-button {
+    background-color: #f74343;
+    border: none;
+    color: #ffffff;
+}
+
+.pay-button:hover {
+    background-color: green;
+}
+
+.delete-button:hover {
+    background-color: red;
+}
+
+.notification {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    color: #f6f6f6;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.notification.success {
+    background-color: #28a745; /* Xanh lá cây đậm */
+}
+
+.notification.error {
+    background-color: #dc3545; /* Đỏ đậm */
+}
+
+.product-item.selected {
+    background-color: #96bde6; /* Màu xanh dương cho sản phẩm đã chọn */
+    color: #000000;
+}

@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+input[type="datetime-local"] {
+    padding: 5px;
+    font-size: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 25px;
+    color: white;
+    background-color: #4994a1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #357a8d;
+}
+
+#countdown {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+#promo-status {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* Các định dạng CSS hiện có */
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: #4994a1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #357a8d;
+}
+
+#reset-promo-time {
+    background-color: #e74c3c; /* Màu đỏ cho nút reset */
+    margin-left: 10px; /* Khoảng cách giữa các nút */
+}
+
+#reset-promo-time:hover {
+    background-color: #c0392b; /* Màu đỏ đậm khi hover */
+}
+

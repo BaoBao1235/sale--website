@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js" defer></script>
+    <script>
+        function pay(){
+            alert('Hủy đơn thành công!');
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>GIỎ HÀNG</h1>
+    </div>
+    <div class="cart-section">
+        <div class="product-list">
+            <!-- Sản phẩm sẽ được thêm vào đây -->
+        </div>
+        <div class="promo-code">
+            <input type="text" placeholder="Nhập mã giảm giá" id="promo-code-input">
+            <button id="apply-promo" onclick="applyPromoCode()">Áp dụng</button>
+        </div>
+        <div class="summary">
+            <p>Tổng tiền: <span id="total-price">0 VND</span></p>
+            <p>VAT 5%: <span id="vat">0 VND</span></p>
+            <p><strong>Tổng thanh toán: <span id="total-payment">0 VND</span></strong></p>
+        </div>
+        <div class="buttons">
+            <button class="pay-button"><b>THANH TOÁN</b></button>
+            <button class="delete-button" onclick="pay()"><b>Hủy đơn</b></button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+/* Đặt các kiểu chữ và căn giữa nội dung */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    align-items: center;
+    height: 100%;
+}
+
+/* Kiểu dáng cho khung sản phẩm */
+.product-card {
+    width: 250px; 
+    padding: 20px; 
+    border: 2px solid #1f4f5c;
+    margin: 20px; /* Khoảng cách giữa các khung sản phẩm */
+    box-sizing: border-box; /* Đảm bảo kích thước tính cả padding và border */
+    text-align: center; 
+    flex-grow: 10px; /* Không cho phép mở rộng khi không gian còn trống */
+    display: flex; /* Thay đổi để hỗ trợ căn giữa */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Căn giữa nội dung */
+    height: 400px; /* Đặt chiều cao cố định cho khung sản phẩm */
+}
+
+/* Kiểu dáng cho hình ảnh sản phẩm với nhiều hiệu ứng khi di chuột qua */
+.product-image {
+    width: 100%; /* Đảm bảo hình ảnh lấp đầy khung ngang */
+    height: 500px; /* Đặt chiều cao cố định cho hình ảnh */
+    object-fit: cover; /* Lấp đầy khung mà không làm biến dạng ảnh */
+    margin-bottom: 10px; /* Khoảng cách dưới hình ảnh */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm hiệu ứng chuyển động */
+}
+
+.product-image:hover {
+    transform: scale(1.1) rotate(10deg); /* Phóng to và xoay ảnh khi di chuột qua */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ khi di chuột qua */
+}
+
+/* Kiểu dáng cho tiêu đề sản phẩm */
+.product-title {
+    font-size: 18px; /* Kích thước chữ tiêu đề lớn hơn */
+    margin: 10px 0;
+}
+
+/* Kiểu dáng cho mô tả sản phẩm */
+.product-description {
+    font-size: 16px; /* Kích thước chữ mô tả lớn hơn */
+    color: #ccc; 
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Kiểu dáng cho giá sản phẩm */
+.product-price {
+    font-size: 20px; /* Kích thước chữ giá lớn hơn */
+    color: #fff;
+    margin: 10px 0;
+    font-weight: bolder;
+}
+
+/* Kiểu dáng cho nút mua hàng */
+.buy-button {
+    background-color: #080d33;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px; /* Kích thước chữ nút lớn hơn */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Kiểu dáng khi nút mua hàng được hover */
+.buy-button:hover {
+    background-color: #04106b;
+}
+
+/* Chia 2 phần cho sản phẩm bằng flex */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Cho img đều bằng nhau */
+.flex-container img {
+    width: 160px;
+    height: 160px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+}
+
+/* Container cho banner và các nút điều hướng */
+.banner-container {
+    position: relative;
+    width: 1288px;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kiểu dáng cho hình ảnh banner */
+.banner {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    position: absolute; /* Đảm bảo hình ảnh nằm trên cùng của khung */
+    transition: opacity 1s ease-in-out; /* Thêm hiệu ứng chuyển đổi mờ */
+}
+
+/* Lớp để ẩn ảnh */
+.banner.fade-out {
+    opacity: 0;
+}
+
+/* Lớp để hiển thị ảnh */
+.banner.fade-in {
+    opacity: 1;
+}
+
+/* Kiểu dáng cho nút mũi tên */
+.arrow-button {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2; /* Đảm bảo nút nằm trên ảnh */
+    border-radius: 50%;
+    width: 40px; /* Kích thước nút */
+    height: 40px; /* Kích thước nút */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Vị trí các nút mũi tên */
+#prev-button {
+    left: 10px;
+}
+
+#next-button {
+    right: 10px;
+}
+
+.arrow-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

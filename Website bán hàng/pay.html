@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+    <link rel="stylesheet" href="pay.css">
+    <script src="pay.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Trang Thanh Toán</h1>
+    </div>
+
+    <div class="payment-section">
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="product">Sản phẩm:</label>
+                <input type="text" id="product" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Số lượng:</label>
+                <input type="number" id="quantity" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Đơn giá:</label>
+                <input type="text" id="price" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="shipping-fee">Phí vận chuyển:</label>
+                <input type="text" id="shipping-fee" value="50,000 VND" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="discount-code">Mã giảm giá:</label>
+                <input type="text" id="discount-code">
+                <button type="button" id="apply-discount">Áp dụng mã giảm giá</button>
+            </div>
+
+            <div class="form-group">
+                <label for="total-amount">Tổng cộng:</label>
+                <input type="text" id="total-amount" readonly>
+            </div>
+
+            <button type="submit">Thanh toán</button>
+        </form>
+    </div>
+</body>
+</html>
